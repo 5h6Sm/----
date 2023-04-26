@@ -12,8 +12,6 @@ const remove = (dirPath) => {
     data = data.replace('[기밀]', '');
     fs.writeFileSync(filePath, data);
 
-    const delWord = path.join(dirPath, file.replace('[기밀]', ''));
-    fs.renameSync(filePath, delWord);
   });
 };
 
